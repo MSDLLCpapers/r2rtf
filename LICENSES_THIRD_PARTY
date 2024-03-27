@@ -1,0 +1,7 @@
+--------------------------------------------------
+Third party R libraries listed by License type
+[Format: Name - URL]
+--------------------------------------------------
+
+GPL-2 | GPL-3 [expanded from: GPL (>=2)]
+	* grDevices - https://www.stat.auckland.ac.nz/~paul/RG2e/index.html

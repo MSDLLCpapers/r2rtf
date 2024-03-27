@@ -1,0 +1,104 @@
+destination: docs
+
+url: https://merck.github.io/r2rtf/
+
+template:
+  bootstrap: 5
+  bslib:
+    preset: "bootstrap"
+    primary: "#00857c"
+    navbar-light-brand-color: "#fff"
+    navbar-light-brand-hover-color: "#fff"
+    navbar-light-color: "#fff"
+    navbar-light-hover-color: "#fff"
+    navbar-light-active-color: "#fff"
+    dropdown-link-hover-color: "#fff"
+    dropdown-link-hover-bg: "#00857c"
+
+footer:
+  structure:
+    left: [developed_by, built_with, legal]
+    right: [blank]
+  components:
+    legal: "<br>Copyright &copy; 2023 Merck & Co., Inc., Rahway, NJ, USA and its affiliates. All rights reserved."
+    blank: "<span></span>"
+
+navbar:
+  left:
+    - icon: fas fa-file-code
+      text: "Reference"
+      href: reference/index.html
+    - icon: fas fa-play-circle
+      text: "Get started"
+      href: articles/r2rtf.html
+    - text: "Articles"
+      icon: fas fa-book
+      href: articles/index.html
+    - icon: fas fa-newspaper
+      text: "Changelog"
+      href: news/index.html
+  right:
+    - icon: fab fa-github
+      text: "Source code"
+      href: https://github.com/Merck/r2rtf
+
+articles:
+- title: Get Started
+  contents:
+  - r2rtf
+- title: TLF Examples
+  navbar: ~
+  contents:
+  - example-basechar
+  - example-efficacy
+  - example-ae-summary
+  - example-figure
+  - example-sublineby-pageby-groupby
+- title: Paragraph Style
+  contents:
+  - rtf-text
+  - rtf-row
+- title: Utility
+  contents:
+  - rtf-convert-format
+- title: Package Design
+  contents:
+  - design-pattern
+- title: CRAN
+  contents:
+  - r2rtf-cran
+
+reference:
+- title: RTF Table
+  contents:
+  - "rtf_page"
+  - "rtf_page_header"
+  - "rtf_page_footer"
+  - "rtf_title"
+  - "rtf_subline"
+  - "rtf_colheader"
+  - "rtf_body"
+  - "rtf_footnote"
+  - "rtf_source"
+  - "rtf_encode"
+  - "write_rtf"
+  - "assemble_rtf"
+  - "assemble_docx"
+- title: RTF Figure
+  contents:
+  - "rtf_read_figure"
+  - "rtf_figure"
+- title: Example Data
+  contents:
+  - "r2rtf_HAMD17"
+  - "r2rtf_adsl"
+  - "r2rtf_adae"
+  - "r2rtf_tbl1"
+  - "r2rtf_tbl2"
+  - "r2rtf_tbl3"
+- title: Utility
+  contents:
+  - "rtf_rich_text"
+  - "rtf_read_png"
+  - "utf8Tortf"
+
